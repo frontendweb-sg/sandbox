@@ -70,13 +70,29 @@ const CodeEditor = forwardRef<editorRefs, CodeEditorProps>(
 
 		useImperativeHandle(ref, () => ({ editorRef, monacoRef }));
 		return (
-			<div>
+			<div className="editor-wrapper">
 				<Editor
+					height="100%"
+					width="100%"
 					theme={`vs-${theme}`}
 					language={language}
-					height={height}
 					value={content}
-					defaultValue="const a  =1;"
+					defaultValue="import React, { useState } from 'react';
+					import { createRoot } from 'react-dom/client';
+					const Counter = () => {
+						const [count, setCount] = useState(0);
+						return (
+							<div>
+								<h1 onClick={() => setCount((prev) => prev + 1)}>
+									Hello world - {count}
+								</h1>
+							</div>
+						);
+					};
+					
+					const root = createRoot(document.getElementById('root'));
+					root.render(<Counter />);
+					"
 					onChange={changeHandler}
 					onMount={handleEditorDidMount}
 					options={{

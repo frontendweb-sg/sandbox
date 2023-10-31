@@ -14,17 +14,21 @@
     "@types/lodash": "^4.14.200",
     "@types/prettier": "^3.0.0",
     "axios": "^1.6.0",
+    "bootstrap": "^5.3.2",
+    "classnames": "^2.3.2",
     "esbuild": "^0.19.5",
     "esbuild-wasm": "^0.19.5",
     "localforage": "^1.10.0",
     "lodash": "^4.17.21",
     "monaco-editor": "^0.44.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-resizable": "^3.0.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
+    "@types/react-resizable": "^3.0.6",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react-swc": "^3.3.2",
